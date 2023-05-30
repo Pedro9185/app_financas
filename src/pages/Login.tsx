@@ -1,5 +1,6 @@
 import { Button, Grid,  TextField, Typography } from '@mui/material';
 import React from 'react';
+import ButtonDefault from './components/Button';
 
 const Login: React.FC= () => {
   return (
@@ -7,17 +8,15 @@ const Login: React.FC= () => {
               <Grid    height="80%" width="30%" >
               <Grid xs={false}  spacing={2} display="flex" flexDirection="column" bgcolor="#fff" width="100%" height="100%" alignItems="center" justifyContent="center" borderRadius="20px">
                     <Grid xs={12} marginBottom="50px">
-                        <Typography variant='h4'>Acessar App</Typography>
+                        <Typography variant='h6'>Acessar App Finanças</Typography>
                     </Grid>
                    <Grid xs={12} marginBottom="20px">
-                     <TextField id="filled-basic" label="Email" variant="standard" />
+                     <TextField id="filled-basic" label="Email" type='email' variant="standard" />
                    </Grid>
                     <Grid xs={12}>
-                     <TextField id="filled-basic" label="Password" variant="standard" />
+                     <TextField id="filled-basic" label="Password" type='password' variant="standard" />
                    </Grid>
-                   <Grid xs={12} marginTop={10}>
-                     <Button  type='submit' variant='contained'>Logar</Button>
-                   </Grid>
+                   <ButtonDefault title='Entrar'/>
                     
                 </Grid>
             </Grid>
