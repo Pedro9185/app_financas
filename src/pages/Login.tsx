@@ -9,7 +9,7 @@ const Login: React.FC= () => {
               <Grid    height="80%" width="30%" >
               <Grid xs={false}  spacing={2} display="flex" flexDirection="column" bgcolor="#fff" width="100%" height="100%" alignItems="center" justifyContent="center" borderRadius="20px">
                     <Grid xs={12} marginBottom="50px">
-                        <Typography variant='h6'>Acessar App Finanças</Typography>
+                        <Typography variant='h4'>Acessar App Finanças</Typography>
                     </Grid>
                    <Grid xs={12} marginBottom="20px">
                      <TextField id="filled-basic" label="Email" type='email' variant="standard" />
