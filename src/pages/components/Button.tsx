@@ -8,7 +8,7 @@ interface ButtonDefaultProps {
 const ButtonDefault: React.FC<ButtonDefaultProps> = ({ title }) => {
   return (
     <React.Fragment>
-        <Grid xs={12} marginTop={10}>
+        <Grid xs={12} marginTop={5}>
              <Button  type='submit' variant='contained'>{title}
              </Button>
          </Grid>

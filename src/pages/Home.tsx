@@ -13,9 +13,9 @@ const Home: React.FC = () => {
       </Grid>
     <Grid xs={12} width="100vw" height="90vh" 
     display="flex"
-  direction="row"
-  justifyContent="flex-end"
-  alignItems="flex-end">
+    direction="row"
+    justifyContent="flex-end"
+    alignItems="flex-end">
       <BasicModal/>
     </Grid>
     </React.Fragment>

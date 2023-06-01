@@ -3,14 +3,15 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-import { IconButton } from '@mui/material';
+import { Grid, IconButton, TextField } from '@mui/material';
+import ButtonDefault from './Button';
 
 const style = {
   position: 'absolute' as 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 500,
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -32,12 +33,18 @@ export default function BasicModal() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
+          
+         <Grid xs={12} width={'100%'}  display={'flex'} direction={'column'} justifyContent={'space-around'} alignItems={'center'} >
+          <Typography variant='h6'>Cadastrar</Typography>
+            <Grid xs={12} marginBottom={'20px'} marginTop={5} width={'100%'}>
+              <TextField variant='outlined' type='number' label='Valor' fullWidth/>
+            </Grid>
+            <Grid xs={12} marginBottom={'5px'} width={'100%'}>
+              <TextField variant='outlined' type='text' label='Descrição' fullWidth/>
+            </Grid>
+              <ButtonDefault title='Cadastrar'/>
+         </Grid>
+         
         </Box>
       </Modal>
     </div>
